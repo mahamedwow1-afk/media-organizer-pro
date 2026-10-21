@@ -1,0 +1,63 @@
+"""Configuration file for Media Organizer Pro."""
+
+source_dir: "./input"
+target_dir: "./output"
+recursive: true
+dry_run: false
+
+# File size limit in MB
+max_file_size_mb: 10240
+
+# FFmpeg paths (optional - will use system default if not set)
+# ffmpeg_path: "/usr/bin/ffmpeg"
+# ffprobe_path: "/usr/bin/ffprobe"
+
+# ML Classification (requires tensorflow)
+use_ml_classification: false
+
+# ML Model path (for future implementation)
+# model_path: "./models/classifier.h5"
+
+# Video extensions to process
+video_extensions:
+  - ".mp4"
+  - ".avi"
+  - ".mkv"
+  - ".mov"
+  - ".wmv"
+  - ".flv"
+  - ".webm"
+
+# Image extensions to process
+image_extensions:
+  - ".jpg"
+  - ".jpeg"
+  - ".png"
+  - ".gif"
+  - ".bmp"
+  - ".tiff"
+  - ".webp"
+
+# Audio extensions to process
+audio_extensions:
+  - ".mp3"
+  - ".wav"
+  - ".flac"
+  - ".aac"
+  - ".ogg"
+  - ".wma"
+
+# Document extensions to process
+document_extensions:
+  - ".pdf"
+  - ".doc"
+  - ".docx"
+  - ".txt"
+  - ".xls"
+  - ".xlsx"
+
+# Output folder naming format
+folder_format: "{type}/{%Y}/{%B}"
+
+# Whether to skip existing files in target
+skip_existing: true

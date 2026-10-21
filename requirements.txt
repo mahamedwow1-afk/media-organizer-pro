@@ -1,0 +1,25 @@
+# Media Organizer Pro - Dependencies
+# Core dependencies
+python>=3.9
+numpy>=1.21.0
+
+# Multimedia processing
+# ffmpeg-python  # Uncomment if you want Python bindings for FFmpeg
+# Pillow>=9.0.0  # For image processing
+
+# Configuration
+pyyaml>=6.0
+
+# Machine Learning (optional - for advanced classification)
+# tensorflow>=2.8.0  # Uncomment for ML-based classification
+# torch>=1.12.0      # Alternative to TensorFlow
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Development
+black>=22.0.0
+flake8>=4.0.0
+isort>=5.10.0
+mypy>=0.950
